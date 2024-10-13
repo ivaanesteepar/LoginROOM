@@ -29,3 +29,4 @@ plugins {
     kotlin("kapt")
 }
 ```
+3. Después de agregar las dependencias, sincroniza tu proyecto para que Gradle descargue las bibliotecas necesarias.
