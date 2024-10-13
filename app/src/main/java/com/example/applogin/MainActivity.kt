@@ -2,10 +2,10 @@ package com.example.applogin
 
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.example.applogin.databinding.ActivityMainBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -13,20 +13,18 @@ import kotlinx.coroutines.withContext
 class MainActivity : AppCompatActivity() {
 
     private lateinit var app: UserApp
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         app = application as UserApp // Asegúrate de que esto esté correcto
 
-        val btnLogin: Button = findViewById(R.id.buttonLogin)
-        val editUsername: EditText = findViewById(R.id.editTextUsername)
-        val editPassword: EditText = findViewById(R.id.editTextPassword)
-
-        btnLogin.setOnClickListener {
-            val username = editUsername.text.toString()
-            val password = editPassword.text.toString()
+        binding.buttonLogin.setOnClickListener {
+            val username = binding.editTextUsername.text.toString()
+            val password = binding.editTextPassword.text.toString()
 
             if (username.isNotEmpty() && password.isNotEmpty()) {
                 // Validar que la contraseña tenga más de 8 caracteres
@@ -56,6 +54,5 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Por favor, completa los campos", Toast.LENGTH_SHORT).show()
             }
         }
-
     }
 }
