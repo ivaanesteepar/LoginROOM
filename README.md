@@ -1,6 +1,9 @@
 ## INTERFAZ
 <img src="https://github.com/user-attachments/assets/5bfd1b9b-5306-4f46-990d-20c998273111" width="170"/>
 
+## USO
+Clona el repositorio: ```git clone https://github.com/ivaanesteepar/LoginRoom```
+
 ## DESCRIPCIÓN
 Esta es una aplicación de inicio de sesión desarrollada en Android que utiliza la biblioteca Room para la gestión de una base de datos local. La aplicación permite a los usuarios registrarse y autenticarse mediante un nombre de usuario y contraseña.
 
