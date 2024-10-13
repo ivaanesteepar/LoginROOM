@@ -27,4 +27,3 @@ dependencies {
 ```
 kotlin("kapt")
 ```
-3. 
