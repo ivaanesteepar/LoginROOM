@@ -3,7 +3,7 @@
 <img src="https://github.com/user-attachments/assets/09e209e0-cbab-426a-adaa-443540bc8c7c" />
 
 ## DESCRIPCIÓN
-Esta es una aplicación de inicio de sesión desarrollada en Android que utiliza la biblioteca Room para la gestión de una base de datos local. La aplicación permite a los usuarios autenticarse mediante un nombre de usuario y contraseña.
+Esta es una aplicación de inicio de sesión desarrollada en Android que utiliza la biblioteca Room para la gestión de una base de datos local. La aplicación permite a los usuarios registrarse y autenticarse mediante un nombre de usuario y contraseña.
 
 ## CARACTERÍSTICAS
   - **Registro de Usuario**: Los nuevos usuarios pueden registrarse y almacenar sus credenciales de forma segura en la base de datos local.
