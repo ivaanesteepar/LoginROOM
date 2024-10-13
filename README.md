@@ -25,5 +25,7 @@ dependencies {
 ```
 2. Si estás usando Kotlin, asegúrate de aplicar el plugin de KAPT en la parte superior de tu archivo build.gradle:
 ```
-kotlin("kapt")
+plugins {
+    kotlin("kapt")
+}
 ```
