@@ -14,3 +14,17 @@ Esta es una aplicación de inicio de sesión desarrollada en Android que utiliza
   - **Kotlin**: Lenguaje de programación utilizado para el desarrollo de la aplicación.
   - **Android Jetpack**: Conjunto de bibliotecas que incluye Room para la gestión de bases de datos.
   - **Corutinas**: Para realizar operaciones de base de datos de manera asíncrona sin bloquear la interfaz de usuario.
+
+## COMO USAR
+1. Abre tu archivo build.gradle (nivel de módulo) y agrega las siguientes dependencias dentro del bloque dependencies:
+```
+dependencies {
+    implementation("androidx.room:room-ktx:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
+}
+```
+2. Si estás usando Kotlin, asegúrate de aplicar el plugin de KAPT en la parte superior de tu archivo build.gradle:
+```
+kotlin("kapt")
+```
+3. 
