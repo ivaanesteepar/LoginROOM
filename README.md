@@ -1,10 +1,6 @@
 ## INTERFAZ
-<div style="display: flex; justify-content: flex-end;">
-    <img src="https://github.com/user-attachments/assets/1900e897-7c50-4710-b16d-35a4edcb09a7" width="170" />
-    <img src="https://github.com/user-attachments/assets/09e209e0-cbab-426a-adaa-443540bc8c7c" />
-</div>
-
-
+<img src="https://github.com/user-attachments/assets/1900e897-7c50-4710-b16d-35a4edcb09a7" width="170" />
+<img src="https://github.com/user-attachments/assets/09e209e0-cbab-426a-adaa-443540bc8c7c" />
 
 ## DESCRIPCIÓN
 Esta es una aplicación de inicio de sesión desarrollada en Android que utiliza la biblioteca Room para la gestión de una base de datos local. La aplicación permite a los usuarios registrarse y autenticarse mediante un nombre de usuario y contraseña.
