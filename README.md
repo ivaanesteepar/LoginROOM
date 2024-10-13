@@ -1,6 +1,9 @@
 ## INTERFAZ
-<img src="https://github.com/user-attachments/assets/1900e897-7c50-4710-b16d-35a4edcb09a7" width="170"/>
-<img src="https://github.com/user-attachments/assets/09e209e0-cbab-426a-adaa-443540bc8c7c"/>
+<div style="display: flex; justify-content: flex-end;">
+    <img src="https://github.com/user-attachments/assets/1900e897-7c50-4710-b16d-35a4edcb09a7" width="170" />
+    <img src="https://github.com/user-attachments/assets/09e209e0-cbab-426a-adaa-443540bc8c7c" />
+</div>
+
 
 
 ## DESCRIPCIÓN
