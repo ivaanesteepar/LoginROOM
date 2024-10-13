@@ -1,6 +1,6 @@
 ## INTERFAZ
-<img src="https://github.com/user-attachments/assets/505d1d3e-c1d8-4492-9ca8-7ffb2cf21975" width="170"/>
-<img src="https://github.com/user-attachments/assets/09e209e0-cbab-426a-adaa-443540bc8c7c" />
+<img src="https://github.com/user-attachments/assets/0588fb31-529e-433d-ad9f-751a0dd20004" width="170"/>
+<img src="https://github.com/user-attachments/assets/2367925a-05e8-4089-8f87-29d1f314001e"/>
 
 
 ## DESCRIPCIÓN
