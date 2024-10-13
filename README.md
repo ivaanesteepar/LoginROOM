@@ -17,7 +17,7 @@ Esta es una aplicación de inicio de sesión desarrollada en Android que utiliza
   - **Android Jetpack**: Conjunto de bibliotecas que incluye Room para la gestión de bases de datos.
   - **Corutinas**: Para realizar operaciones de base de datos de manera asíncrona sin bloquear la interfaz de usuario.
 
-## COMO USAR
+## CÓMO USAR
 1. Abre tu archivo build.gradle (nivel de módulo) y agrega las siguientes dependencias dentro del bloque dependencies:
 ```
 dependencies {
