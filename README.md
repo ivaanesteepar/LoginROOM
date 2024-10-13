@@ -12,6 +12,7 @@ Esta es una aplicación de inicio de sesión desarrollada en Android que utiliza
   - **Inicio de Sesión**: Los usuarios existentes pueden iniciar sesión utilizando su nombre de usuario y contraseña.
   - **Base de Datos Local**: Utiliza Room para gestionar la base de datos, lo que facilita el almacenamiento y recuperación de datos.
   - **Interfaz de Usuario Intuitiva**: Diseño sencillo y fácil de usar para mejorar la experiencia del usuario.
+  - **Seguridad**: No admite contraseñas menores o iguales a 8 caracteres.
     
 ## TECNOLOGÍAS UTILIZADAS
   - **Kotlin**: Lenguaje de programación utilizado para el desarrollo de la aplicación.
