@@ -1,7 +1,6 @@
 package com.example.applogin
 
 import android.os.Bundle
-import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
@@ -9,6 +8,8 @@ import com.example.applogin.databinding.ActivityMainBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+
+import android.content.Intent // Importar Intent al inicio del archivo
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         app = application as UserApp // Asegúrate de que esto esté correcto
 
+        // Lógica para iniciar sesión
         binding.buttonLogin.setOnClickListener {
             val username = binding.editTextUsername.text.toString()
             val password = binding.editTextPassword.text.toString()
@@ -36,23 +38,28 @@ class MainActivity : AppCompatActivity() {
                 lifecycleScope.launch {
                     val user = app.room.userDao().getUser(username, password)
 
-                    if (user == null) {
-                        // El usuario no existe, se puede registrar
-                        val newUser = User(id = 0, name = username, password = password)
-                        app.room.userDao().insert(newUser)
+                    if (user != null) {
+                        // Usuario existe, iniciar sesión
                         withContext(Dispatchers.Main) {
-                            Toast.makeText(this@MainActivity, "Usuario registrado", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@MainActivity, "Bienvenido, $username", Toast.LENGTH_SHORT).show()
+                            // Aquí puedes iniciar la siguiente actividad
                         }
                     } else {
-                        // El usuario ya existe
+                        // El usuario no existe
                         withContext(Dispatchers.Main) {
-                            Toast.makeText(this@MainActivity, "El usuario ya existe", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@MainActivity, "Usuario no encontrado. Regístrate primero.", Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
             } else {
                 Toast.makeText(this, "Por favor, completa los campos", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        // Lógica para ir a la actividad de registro
+        binding.buttonRegister.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java) // Asegúrate de que RegisterActivity esté definida
+            startActivity(intent) // Inicia la actividad de registro
         }
     }
 }

@@ -8,18 +8,17 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/textViewTitle"
+        android:id="@+id/textViewRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Iniciar Sesión"
+        android:text="Registro"
         android:textSize="30sp"
         android:textColor="#3F51B5"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/editTextUsername"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintVertical_bias="0.2" />
+        android:layout_marginBottom="24dp" />
 
     <EditText
         android:id="@+id/editTextUsername"
@@ -31,7 +30,7 @@
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+        app:layout_constraintTop_toBottomOf="@id/textViewRegister" />
 
     <EditText
         android:id="@+id/editTextPassword"
@@ -46,17 +45,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextUsername" />
 
-    <Button
-        android:id="@+id/buttonLogin"
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Iniciar Sesión"
-        android:background="@color/colorAccent"
-        android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Confirmar Contraseña"
+        android:inputType="textPassword"
+        android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword" />
 
     <Button
         android:id="@+id/buttonRegister"
@@ -65,9 +65,9 @@
         android:text="Registrarse"
         android:background="@color/colorAccent"
         android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/buttonLogin"
+        app:layout_constraintTop_toBottomOf="@id/editTextConfirmPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
