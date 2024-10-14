@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                     } else {
                         // El usuario no existe
                         withContext(Dispatchers.Main) {
-                            Toast.makeText(this@MainActivity, "Usuario no encontrado. Regístrate primero.", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@MainActivity, "El usuario o la contraseña son incorrectos", Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
@@ -61,5 +61,18 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RegisterActivity::class.java) // Asegúrate de que RegisterActivity esté definida
             startActivity(intent) // Inicia la actividad de registro
         }
+
+        // Lógica para ir a la actividad de restablecimiento de contraseña
+        binding.textViewForgotPassword.setOnClickListener {
+            val username = binding.editTextUsername.text.toString()
+            if (username.isNotEmpty()) {
+                val intent = Intent(this, ForgotPwd::class.java)
+                intent.putExtra("USERNAME", username) // Pasar el nombre de usuario a la nueva actividad
+                startActivity(intent) // Inicia la actividad de restablecimiento de contraseña
+            } else {
+                Toast.makeText(this, "Por favor, ingresa tu nombre de usuario", Toast.LENGTH_SHORT).show()
+            }
+        }
+
     }
 }
