@@ -1,5 +1,5 @@
 ## INTERFAZ
-<img src="https://github.com/user-attachments/assets/0588fb31-529e-433d-ad9f-751a0dd20004" width="170"/>
+<img src="https://github.com/user-attachments/assets/b437af99-614b-4657-ae55-77284e19f466" width="170"/>
 <img src="https://github.com/user-attachments/assets/f604dc28-f862-467d-a51e-ed54fd7c4874" width="170"/>
 <img src="https://github.com/user-attachments/assets/2367925a-05e8-4089-8f87-29d1f314001e"/>
 
