@@ -1,6 +1,7 @@
 ## INTERFAZ
-<img src="https://github.com/user-attachments/assets/505d1d3e-c1d8-4492-9ca8-7ffb2cf21975" width="170"/>
-<img src="https://github.com/user-attachments/assets/09e209e0-cbab-426a-adaa-443540bc8c7c" />
+<img src="https://github.com/user-attachments/assets/0588fb31-529e-433d-ad9f-751a0dd20004" width="170"/>
+<img src="https://github.com/user-attachments/assets/f604dc28-f862-467d-a51e-ed54fd7c4874" width="170"/>
+<img src="https://github.com/user-attachments/assets/2367925a-05e8-4089-8f87-29d1f314001e"/>
 
 
 ## DESCRIPCIÓN
@@ -11,13 +12,14 @@ Esta es una aplicación de inicio de sesión desarrollada en Android que utiliza
   - **Inicio de Sesión**: Los usuarios existentes pueden iniciar sesión utilizando su nombre de usuario y contraseña.
   - **Base de Datos Local**: Utiliza Room para gestionar la base de datos, lo que facilita el almacenamiento y recuperación de datos.
   - **Interfaz de Usuario Intuitiva**: Diseño sencillo y fácil de usar para mejorar la experiencia del usuario.
+  - **Seguridad**: No admite contraseñas menores o igual a 8 caracteres.
     
 ## TECNOLOGÍAS UTILIZADAS
   - **Kotlin**: Lenguaje de programación utilizado para el desarrollo de la aplicación.
-  - **Android Jetpack**: Conjunto de bibliotecas que incluye Room para la gestión de bases de datos.
+  - **Jetpack Compose**: Conjunto de bibliotecas que incluye Room para la gestión de bases de datos.
   - **Corutinas**: Para realizar operaciones de base de datos de manera asíncrona sin bloquear la interfaz de usuario.
 
-## COMO USAR
+## CÓMO IMPLEMENTARLO
 1. Abre tu archivo build.gradle (nivel de módulo) y agrega las siguientes dependencias dentro del bloque dependencies:
 ```
 dependencies {
