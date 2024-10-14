@@ -16,7 +16,7 @@ Esta es una aplicación de inicio de sesión desarrollada en Android que utiliza
     
 ## TECNOLOGÍAS UTILIZADAS
   - **Kotlin**: Lenguaje de programación utilizado para el desarrollo de la aplicación.
-  - **Android Jetpack**: Conjunto de bibliotecas que incluye Room para la gestión de bases de datos.
+  - **Jetpack Compose**: Conjunto de bibliotecas que incluye Room para la gestión de bases de datos.
   - **Corutinas**: Para realizar operaciones de base de datos de manera asíncrona sin bloquear la interfaz de usuario.
 
 ## CÓMO IMPLEMENTARLO
